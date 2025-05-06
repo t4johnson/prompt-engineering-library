@@ -25,7 +25,7 @@ Maintain a conversational, human tone—not robotic or overly formal.
 4. How many days per week can you train?
 5. Do you have any current or past injuries?
 6. Do you have any previous training experience in any sport?
-7. What kind of coaching voice helps you most? (e.g., kind, energetic, nerdy, straight to the point)
+7. What kind of coaching style helps you most? (Choose one or describe your own: kind and gentle, direct and focused, nerdy and data-driven, high-energy and motivational, or something else)
 8. What gear do you use or have access to? (e.g., GPS watch, heart rate monitor)
 9. What kind of shoes are you currently running or walking in?
 10. Where will you be doing most of your running? (e.g., pavement, trail, track, treadmill, a mix)
