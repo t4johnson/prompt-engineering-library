@@ -1,54 +1,39 @@
-# prompt-engineering-library
-A collection of tested and documented prompts for LLMs
+# Prompt Engineering Library
 
-# AI Running Coach – Prompt Engineering Library
-
-This is a modular prompt engineering project designed to power an AI-based running coach. It supports personalized training plan generation, adaptive coaching feedback, motivation delivery, and beginner education—built entirely from tested, reusable prompt components.
-
-**Built by Travis Johnson** to demonstrate real-world use of LLMs, contextual memory, and human-centered design in health + fitness applications.
+A curated collection of structured, modular prompt engineering examples for real-world applications. Focused on fitness, coaching, and gear, this repo blends lived experience with AI tooling to create useful, adaptable systems — not just demos.
 
 ---
 
-## 💡 What It Does
+## AI Running Coach
 
-This system acts as the brain of an AI running coach. It includes:
-- Personalized training plan creation
-- Weekly plan adjustment based on feedback
-- Motivation tailored to the user’s coaching style
+A modular AI-based running coach designed to deliver:
+
+- Personalized training plan generation
+- Weekly adaptive plan adjustment
+- Motivation tailored to user coaching style
 - On-demand check-ins and mental support
-- Educational explanations of running concepts and workouts
+- Beginner-friendly running education
 
-Each capability is handled by a well-documented, reusable prompt module.
+Each capability is powered by a reusable, well-documented prompt module.
 
----
-
-## 🧠 How It Works
-
-The system follows a **hybrid interaction model**:
-- **Structured onboarding form** to gather core user data
-- **Conversational chat** for daily interaction, check-ins, and motivation
-- **Context memory** to maintain tone, goals, gear, terrain, etc.
-
-Prompt routing is managed logically based on user input and feedback loops.
-
-See the [`interface-spec.md`](docs/interface-spec.md) for a breakdown of the flow.
+Built to demonstrate practical use of large language models (LLMs), contextual memory, and user-centered interaction design in fitness and health.
 
 ---
 
-## 📦 Prompt Modules
+## Prompt Modules
 
 | Module | Description |
 |--------|-------------|
-| `training-plan-generator.md` | Builds a full training plan based on user background, goals, terrain, and preferences |
-| `plan-adjustment.md` | Weekly check-in that adapts the plan based on performance, soreness, and energy |
-| `daily-check-in.md` | Allows the user to submit casual, real-time updates to get immediate support |
-| `motivation-style.md` | Generates motivational messages tailored to the user's selected coaching style |
-| `run-explainer.md` | Explains workout types, pacing strategies, and training concepts in plain language |
-| `context-template.md` | Shared context template used to simulate memory across prompts |
+| `training-plan-generator.md` | Builds a 7-day structured training plan based on experience level, goals, terrain, and preferences |
+| `plan-adjustment.md` | Weekly check-in prompt that adapts the plan based on soreness, energy, and feedback |
+| `daily-check-in.md` | Casual input prompt to log updates and request guidance |
+| `motivation-style.md` | Provides motivational support in the user’s preferred tone |
+| `run-explainer.md` | Explains running workouts and terminology in plain language |
+| `context-template.md` | Shared memory structure to simulate ongoing coaching context |
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 prompt-engineering-library/
 ├── prompts/
@@ -67,30 +52,45 @@ prompt-engineering-library/
 
 ---
 
-## 🚀 How to Use or Extend
+## How It Works
 
-- Clone the repo and explore each prompt module individually.
-- Test prompts manually in ChatGPT or with the OpenAI API.
-- Use the included context-template to simulate persistent user memory.
-- Adapt the system to other domains (e.g., weightlifting coach, cycling coach, productivity assistant).
-- Optional: build a front-end chatbot interface using the `interface-spec.md` as a guide.
+The system follows a hybrid interaction model:
+
+- Structured onboarding form gathers core data (experience, goals, availability, terrain, gear, injuries)
+- Conversational prompts allow for adaptive check-ins and motivation
+- Memory prompts maintain tone, context, and history across sessions
+
+For an overview of system architecture and chaining logic, see [`interface-spec.md`](docs/interface-spec.md).
 
 ---
 
-## 🛣️ Future Plans
+## Philosophy
+
+This project reflects a philosophy of building AI tools that solve *real* problems in practical domains — especially where nuance, personalization, and lived experience matter. The prompts are built on retail, coaching, and endurance sport experience — not just abstract AI ideas.
+
+---
+
+## How to Use or Extend
+
+- Clone the repo and explore each prompt module in isolation
+- Test prompts directly in ChatGPT or with the OpenAI API
+- Use the `context-template.md` to simulate persistent memory
+- Adapt the framework to other domains (e.g., strength training, cycling, nutrition, productivity)
+- Optional: build a chatbot interface using the `interface-spec.md` as a guide
+
+---
+
+## Future Plans
 
 - Add gear recommendations and pacing calculators
-- Connect to live weather and terrain APIs
-- Build a web or mobile interface
-- Publish a blog post walkthrough of the project
+- Connect to live weather, location, and terrain APIs
+- Expand to nutrition, hydration, and injury recovery tracking
+- Publish a blog post or walkthrough series
 
 ---
 
-## 👤 Author
+## Author
 
-Built by Travis Johnson  
-Project start: May 2025  
-Goal: Portfolio-ready example of advanced prompt engineering for real-world applications
-
----
-
+Created by [Travis Johnson](https://github.com/t4johnson)  
+Project started: May 2025  
+Objective: Publish a portfolio-quality example of applied prompt engineering focused on real-world value
