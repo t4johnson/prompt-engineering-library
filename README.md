@@ -22,14 +22,20 @@ Built to demonstrate practical use of large language models (LLMs), contextual m
 
 ## Prompt Modules
 
-| Module | Description |
-|--------|-------------|
-| `training-plan-generator.md` | Builds a 7-day structured training plan based on experience level, goals, terrain, and preferences |
-| `plan-adjustment.md` | Weekly check-in prompt that adapts the plan based on soreness, energy, and feedback |
-| `daily-check-in.md` | Casual input prompt to log updates and request guidance |
-| `motivation-style.md` | Provides motivational support in the user’s preferred tone |
-| `run-explainer.md` | Explains running workouts and terminology in plain language |
-| `context-template.md` | Shared memory structure to simulate ongoing coaching context |
+| Module                          | Description |
+|--------------------------------|-------------|
+| `training-plan-generator.md`   | Builds a 7-day structured training plan |
+| `plan-adjustment.md`           | Weekly check-in to adjust based on feedback |
+| `daily-check-in.md`            | Day-of input prompt to log effort and state |
+| `motivation-style.md`          | Provides support in user’s preferred tone |
+| `run-explainer.md`             | Explains workouts in clear, plain language |
+| `fueling-hydration-planner.md` | Recommends fueling based on run type and weather |
+| `run-summary-zero-shot.md`     | Generates post-run summaries with no examples |
+| `route-generator.md`           | Suggests routes based on location, plan, and terrain |
+| `plan-review-evaluator.md`     | Critiques and improves training plan quality |
+| `red-team-checker.md`          | Flags risky, harmful, or unsafe coaching advice |
+| `structured-plan-export.md`    | Converts plans to structured JSON or CSV |
+
 
 ---
 
