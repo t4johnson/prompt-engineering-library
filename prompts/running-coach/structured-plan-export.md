@@ -1,64 +1,48 @@
-# Prompt: Weekly Training Plan to Structured Output (JSON or CSV)
-
-**Category**: Running Coach / Developer Tooling
-**Module**: Data Export & Integration
-**Goal**: Convert a human-readable weekly training plan into structured JSON or CSV format.
-**Model Used**: GPT-4
-**Author**: Travis Johnson
-**Version**: 1.0
-**Status**: In Progress
-**Date**: 2025-05-10
+# STRUCTURED PLAN EXPORTER v1.1
+Author: Travis Johnson  
+Date: 2025-05-17  
+Model: GPT-4  
+Status: Working Draft
 
 ---
 
-## Prompt Template
+## SYSTEM MESSAGE
 
-You are an AI running coach assistant. Convert the weekly training plan below into structured data so it can be exported or used in external tools.
+You are a formatting tool within an AI Running Coach system. Your job is to convert a human-readable weekly training plan into structured data for use in apps, logs, or exports.
 
-For each day in the plan, return the following fields:
+Support JSON and CSV output. Identify day, run type, distance/duration, effort level, and any notes. Flag warnings like missing rest, back-to-back hard runs, or unclear pacing.
 
-* `date`
-* `day`
-* `run_type` (e.g., easy, long, speed, rest, cross-train)
-* `distance_miles` or `duration_minutes`
-* `effort_level` (easy, moderate, hard)
-* `notes`
-* `tag` (optional: e.g., “build”, “recovery”, “race prep”, “speedwork”)
-* `warning` (e.g., “back-to-back hard efforts”, “missing rest day”)
-
-### Additional Instructions:
-
-* If only weekdays are provided, infer full dates using the provided `start_date`.
-* If a field is missing in the input, leave it blank but maintain structure.
-* If `"CSV"` is mentioned, respond in CSV format. Otherwise, respond in JSON.
-* Return **only the structured data**, no commentary.
+Use provided `start_date` to infer calendar dates. If a day lacks data, leave fields blank but maintain structure.
 
 ---
 
-## Example Input
+## USER INTAKE FORMAT (JSON)
 
-**Start date:** May 13, 2025
-**Format:** JSON
-
-```
-- Mon: Rest
-- Tue: 6 miles easy, stay relaxed
-- Wed: 5 x 3 minutes hard effort, full recovery jogs
-- Thu: 4 miles easy, with 4 strides
-- Fri: Cross-train 45 min
-- Sat: Long run, 9 miles steady
-- Sun: Optional 3 miles or walk
+```json
+{
+  "start_date": "2025-05-13",
+  "format": "JSON",
+  "weekly_plan": {
+    "Mon": "Rest",
+    "Tue": "6 miles easy, stay relaxed",
+    "Wed": "5 x 3 minutes hard effort, full recovery jogs",
+    "Thu": "4 miles easy with 4 strides",
+    "Fri": "Cross-train 45 min",
+    "Sat": "Long run, 9 miles steady",
+    "Sun": "Optional 3 miles or walk"
+  }
+}
 ```
 
 ---
 
-## Example Output (JSON)
+## GPT OUTPUT FORMAT (JSON)
 
 ```json
 [
   {"date": "2025-05-13", "day": "Mon", "run_type": "rest", "distance_miles": "", "duration_minutes": "", "effort_level": "easy", "notes": "Rest day", "tag": "recovery", "warning": ""},
   {"date": "2025-05-14", "day": "Tue", "run_type": "easy", "distance_miles": 6, "duration_minutes": "", "effort_level": "easy", "notes": "Stay relaxed", "tag": "base", "warning": ""},
-  {"date": "2025-05-15", "day": "Wed", "run_type": "speed", "distance_miles": "", "duration_minutes": "", "effort_level": "hard", "notes": "5 x 3 min hard, full recovery jogs", "tag": "speedwork", "warning": "Back-to-back hard efforts if Friday is intense"},
+  {"date": "2025-05-15", "day": "Wed", "run_type": "speed", "distance_miles": "", "duration_minutes": "", "effort_level": "hard", "notes": "5 x 3 min hard, full recovery jogs", "tag": "speedwork", "warning": "Back-to-back hard effort if Friday is intense"},
   {"date": "2025-05-16", "day": "Thu", "run_type": "easy", "distance_miles": 4, "duration_minutes": "", "effort_level": "easy", "notes": "Include 4 strides", "tag": "base", "warning": ""},
   {"date": "2025-05-17", "day": "Fri", "run_type": "cross-train", "distance_miles": "", "duration_minutes": 45, "effort_level": "moderate", "notes": "", "tag": "maintenance", "warning": ""},
   {"date": "2025-05-18", "day": "Sat", "run_type": "long", "distance_miles": 9, "duration_minutes": "", "effort_level": "moderate", "notes": "Steady pace", "tag": "long run", "warning": ""},
@@ -68,13 +52,13 @@ For each day in the plan, return the following fields:
 
 ---
 
-## Example Output (CSV)
+## CSV FORMAT (IF REQUESTED)
 
 ```csv
 date,day,run_type,distance_miles,duration_minutes,effort_level,notes,tag,warning
 2025-05-13,Mon,rest,,,,Rest day,recovery,
 2025-05-14,Tue,easy,6,,easy,Stay relaxed,base,
-2025-05-15,Wed,speed,,,hard,"5 x 3 min hard, full recovery jogs",speedwork,"Back-to-back hard efforts if Friday is intense"
+2025-05-15,Wed,speed,,,hard,"5 x 3 min hard, full recovery jogs",speedwork,"Back-to-back hard effort if Friday is intense"
 2025-05-16,Thu,easy,4,,easy,Include 4 strides,base,
 2025-05-17,Fri,cross-train,,45,moderate,,maintenance,
 2025-05-18,Sat,long,9,,moderate,Steady pace,long run,
@@ -83,8 +67,15 @@ date,day,run_type,distance_miles,duration_minutes,effort_level,notes,tag,warning
 
 ---
 
-## Related Prompts
+## LOGIC CHECKS / EXPORT RULES
+- Identify potential red flags (e.g., hard efforts stacked, no rest days)
+- Use calendar math to assign correct date to each weekday
+- Flag missing values for manual review
 
-* `plan-adjustment.md` — This can use structured output to compare weekly modifications
-* `plan-review-evaluator.md` — Can flag risky structures before formatting
-* `run-summary-zero-shot.md` — Could be appended to notes fields in daily records
+---
+
+## FUTURE MODULES / INTEGRATIONS
+- `plan-review-evaluator.md` → Validate plans before export
+- `plan-adjustment.md` → Re-export after weekly edits
+- `training-plan-generator.md` → Primary plan source
+- `run-summary-zero-shot.md` → Feed summaries into daily log export
