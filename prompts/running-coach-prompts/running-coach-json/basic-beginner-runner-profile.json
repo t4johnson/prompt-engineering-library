@@ -1,0 +1,36 @@
+{
+    "experience_level": "New",
+    "current_mileage": "5–7 miles/week",
+    "training_days_per_week": 3,
+  
+    "goal_event": {
+      "distance": "5K",
+      "date_or_timeline": "8 weeks from now",
+      "event_name": "Neighborhood Turkey Trot"
+    },
+  
+    "past_running_background": "None — this is their first structured running attempt",
+    "recent_training": "A few short walk/jog treadmill sessions over the last month",
+    "injuries": "Occasional knee soreness after walking",
+    "coaching_style": "Kind and gentle",
+  
+    "motivation": "Wants to build healthy habits and surprise their kids by finishing a race",
+    "schedule_constraints": "Can only run on weekdays after work (6–7pm)",
+    "checkin_frequency": "Weekly",
+  
+    "gear": ["None"],
+    "shoes": "Basic walking shoes, unsure of brand",
+    "location": "Atlanta, GA",
+    "surface": "Sidewalks and paved trails",
+    "elevation": "Low and flat",
+    "weather": "Hot and humid during early fall",
+    "needs_warmup_guidance": true,
+  
+    "preferred_run_time": "Evening",
+    "willing_to_try_new_gear": true,
+    "appetite_for_experimental_methods": "None",
+    "recovery_focus": "Physical",
+  
+    "notes": "They’re excited but nervous about getting injured. Simplicity and encouragement matter more than speed or metrics."
+  }
+  

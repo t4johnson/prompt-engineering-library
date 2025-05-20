@@ -1,0 +1,36 @@
+{
+    "experience_level": "Advanced",
+    "current_mileage": "40–80 miles/week",
+    "training_days_per_week": 6,
+  
+    "goal_event": {
+      "distance": "Marathon",
+      "date_or_timeline": "16 weeks from now",
+      "event_name": "California International Marathon"
+    },
+  
+    "past_running_background": "Multiple marathons, consistent training for 5+ years. Usually runs 5–6 days per week year-round.",
+    "recent_training": "Just finished a base phase with strong long runs and strides. Last race was a tune-up 10K 3 weeks ago.",
+    "injuries": "None — occasional tight hamstrings after speedwork",
+    "coaching_style": "Nerdy and data-driven",
+  
+    "motivation": "Aiming to break 3:10 and qualify for Boston — wants every week of training to have a clear purpose",
+    "schedule_constraints": "Runs before work and on weekends. Has 1–2 flexible weekday mornings for longer sessions.",
+    "checkin_frequency": "Weekly",
+  
+    "gear": ["GPS watch", "Heart rate strap", "Power meter (Stryd)", "Massage gun", "Recovery boots"],
+    "shoes": "Rotating between Endorphin Speed 3, Boston 12, and Alphafly 2 (for race pace efforts)",
+    "location": "Denver, CO",
+    "surface": "Mostly roads and bike paths",
+    "elevation": "High altitude",
+    "weather": "Cool, dry mornings — sometimes windy",
+    "needs_warmup_guidance": false,
+  
+    "preferred_run_time": "Early morning",
+    "willing_to_try_new_gear": true,
+    "appetite_for_experimental_methods": "Full Send",
+    "recovery_focus": "Physical",
+  
+    "notes": "This runner is highly structured, loves spreadsheets, and thrives on detailed progress tracking. Needs pacing precision, variety, and enough recovery to prevent overtraining."
+  }
+  

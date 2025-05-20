@@ -1,0 +1,36 @@
+{
+    "experience_level": "Intermediate",
+    "current_mileage": "20–30 miles/week",
+    "training_days_per_week": 5,
+  
+    "goal_event": {
+      "distance": "10K",
+      "date_or_timeline": "6 weeks from now",
+      "event_name": "Capital 10K"
+    },
+  
+    "past_running_background": "Several local 5Ks and 10Ks over the past 3 years, occasional half marathon",
+    "recent_training": "Solid base for 2 months, mostly steady runs with a few informal tempos",
+    "injuries": "None currently, but has had IT band issues in the past",
+    "coaching_style": "Direct and focused",
+  
+    "motivation": "Wants to break 50 minutes in the 10K — and feel like they trained smarter this time",
+    "schedule_constraints": "Works 9–6, flexible weekends. Can commit 45–60 minutes on weekdays.",
+    "checkin_frequency": "Weekly",
+  
+    "gear": ["GPS watch", "Foam roller", "HR monitor"],
+    "shoes": "Saucony Ride 16, rotating with an older pair of Kinvaras",
+    "location": "Austin, TX",
+    "surface": "Mostly roads with a few trail segments",
+    "elevation": "Mild rollers, nothing steep",
+    "weather": "Hot afternoons, decent mornings (humid)",
+    "needs_warmup_guidance": false,
+  
+    "preferred_run_time": "Morning (before work)",
+    "willing_to_try_new_gear": true,
+    "appetite_for_experimental_methods": "Curious",
+    "recovery_focus": "Physical",
+  
+    "notes": "Wants a plan that feels purposeful — not just busywork. Open to intensity, but doesn’t want to re-aggravate old injuries."
+  }
+  

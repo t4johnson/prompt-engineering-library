@@ -1,0 +1,36 @@
+{
+    "experience_level": "New / Returning / Beginner / Intermediate / Advanced",
+    "current_mileage": "12 miles/week",
+    "training_days_per_week": 4,
+  
+    "goal_event": {
+      "distance": "Half marathon",
+      "date_or_timeline": "12 weeks from now",
+      "event_name": "Austin Distance Challenge"
+    },
+  
+    "past_running_background": "Ran cross country in high school, some 5Ks after college",
+    "recent_training": "Mostly walking and some cycling over the last 3 months",
+    "injuries": "None",
+    "coaching_style": "Tough love",
+  
+    "motivation": "Training for my 40th birthday — want to feel strong again",
+    "schedule_constraints": "Work hours vary — prefer long runs on weekends",
+    "checkin_frequency": "Weekly",
+  
+    "gear": ["GPS watch", "Heart rate monitor"],
+    "shoes": "Brooks Ghost 15, bought 6 months ago",
+    "location": "Boulder, CO",
+    "surface": "Mixed roads and trails",
+    "elevation": "High altitude",
+    "weather": "Cool and dry",
+    "needs_warmup_guidance": true,
+  
+    "preferred_run_time": "Morning",
+    "willing_to_try_new_gear": true,
+    "appetite_for_experimental_methods": "Curious",
+    "recovery_focus": "Both",
+  
+    "notes": "I'm open to experimenting a bit, but I want to avoid getting injured again."
+  }
+  

@@ -1,0 +1,36 @@
+{
+    "experience_level": "Returning",
+    "current_mileage": "15–20 miles/week",
+    "training_days_per_week": 4,
+  
+    "goal_event": {
+      "distance": "Half marathon",
+      "date_or_timeline": "10 weeks from now",
+      "event_name": "Big Sur Half"
+    },
+  
+    "past_running_background": "Former collegiate runner, later did marathons. Took 2 years off due to injury and burnout.",
+    "recent_training": "Light running 3–4x/week for the past month. Some cross-training on bike and pool.",
+    "injuries": "Recovering from Achilles tendinopathy. Cleared to train, but still cautious.",
+    "coaching_style": "Mindful and balanced",
+  
+    "motivation": "Wants to return to running with joy — not chasing old PRs, but building trust in their body again",
+    "schedule_constraints": "Full-time job and family. Prioritizing quality and flexibility over high mileage.",
+    "checkin_frequency": "Weekly",
+  
+    "gear": ["GPS watch", "Resistance bands", "Massage gun"],
+    "shoes": "Hoka Clifton 9 (new), rotating in Topo Magnifly for easy days",
+    "location": "Seattle, WA",
+    "surface": "Paved trails and some track access",
+    "elevation": "Mostly flat, occasional hills",
+    "weather": "Cool, rainy fall",
+    "needs_warmup_guidance": true,
+  
+    "preferred_run_time": "Evening (after kids are in bed)",
+    "willing_to_try_new_gear": false,
+    "appetite_for_experimental_methods": "None",
+    "recovery_focus": "Both",
+  
+    "notes": "This runner has a deep training background but needs help shifting from performance mentality to longevity. They’re self-aware but prone to pushing too hard if unchecked."
+  }
+  
