@@ -1,0 +1,65 @@
+{
+  "userProfile": {
+    "experience": "15 years of running, mostly self-coached.",
+    "recentChallenges": "Most off-periods due to mental/emotional stress rather than injury. Minor abdominal hernia earlier this year but not limiting.",
+    "currentWeeklyMileage": 60,
+    "goalMileage": 80,
+    "ultimateGoals": [
+      "Build to 80\u2013100 mpw for at least a short period",
+      "Regain ability to run 5:00\u20136:00 pace for workouts and races",
+      "Complete a 50-mile route in Austin when weather cools"
+    ],
+    "effortTolerance": 9,
+    "trailInterest": "between occasional and frequent",
+    "structurePreference": "open to monotony or variety depending on what makes sense",
+    "weeklyConstraints": {
+      "Mon\u2013Fri": "High mileage OK",
+      "Sat\u2013Sun": "Short runs only after 5pm"
+    }
+  },
+  "recentTrainingSnapshot": [
+    {
+      "date": "2025-05-23",
+      "distance": 15.01,
+      "duration": "1:57:58",
+      "type": "long run"
+    },
+    {
+      "date": "2025-05-22",
+      "distance": 4.1,
+      "duration": "34:57",
+      "type": "recovery"
+    },
+    {
+      "date": "2025-05-21",
+      "distance": 10.01,
+      "duration": "1:18:11",
+      "type": "easy"
+    },
+    {
+      "date": "2025-05-20",
+      "distance": 10.01,
+      "duration": "1:19:16",
+      "type": "easy"
+    },
+    {
+      "date": "2025-05-19",
+      "distance": 7.05,
+      "duration": "0:57:00",
+      "type": "easy"
+    },
+    {
+      "date": "2025-05-25",
+      "distance": 3.81,
+      "duration": "0:30:40",
+      "type": "shakeout"
+    },
+    {
+      "date": "2025-05-26",
+      "distance": 10.1,
+      "duration": "1:13:23",
+      "type": "easy"
+    }
+  ],
+  "request": "Plan next 1\u20132 weeks of training to begin adding doubles and light workouts without overdoing it. I want to move toward 80 mpw but stay injury-free. Don\u2019t sandbag me."
+}

@@ -22,6 +22,11 @@ Stay aligned with the runner’s tone preference and situation. If they’re rid
 
 ## USER INTAKE FORMAT (JSON)
 
+## INTAKE JSON REQUIRED
+This module expects structured input data in JSON format. Refer to `runner-intake-form.md` for full schema and structure.
+
+**Required fields:** `coaching_style, recent_context`
+
 ```json
 {
   "coaching_style": "Nerdy and data-driven",

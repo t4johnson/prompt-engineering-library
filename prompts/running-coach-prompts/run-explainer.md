@@ -28,6 +28,11 @@ Return JSON. Markdown optional if requested.
 
 ## USER INTAKE FORMAT (JSON)
 
+## INTAKE JSON REQUIRED
+This module expects structured input data in JSON format. Refer to `runner-intake-form.md` for full schema and structure.
+
+**Required fields:** `terms_to_explain, runner_context, coaching_style`
+
 ```json
 {
   "terms_to_explain": ["tempo run", "recovery jog"],
